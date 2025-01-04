@@ -33,7 +33,6 @@ const FormandValidation = () => {
       gender: 'required',
       course: 'required',
       alamat: 'required|string|max:255',
-      member: 'accepted',
     };
 
     const validation = new Validator(formData, rules);
@@ -144,7 +143,6 @@ const FormandValidation = () => {
           />
           Member
         </label>
-        {errors.member && <p className="error">{errors.member[0]}</p>}
       </div>
 
       <button type="submit" className="submit-btn">Submit</button>
